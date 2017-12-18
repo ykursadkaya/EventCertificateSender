@@ -18,7 +18,7 @@ public class EMailSender
 		EmailAttachment attachment = new EmailAttachment();
 		attachment.setPath(certificatePath);
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
-		attachment.setDescription(Constants.EMAIL_ATTACHMENT_DESCRIPTON);
+		attachment.setDescription(Constants.EMAIL_ATTACHMENT_DESCRIPTION);
 		attachment.setName(Constants.EMAIL_ATTACHMENT_NAME);
 
 		MultiPartEmail email = new MultiPartEmail();

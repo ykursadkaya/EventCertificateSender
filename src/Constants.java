@@ -21,10 +21,10 @@ public class Constants
 	public static final String EMAIL_PASSWORD="mail_password";
 	public static final String EMAIL_HOST="mail_host";
 	public static final int EMAIL_SMTP_PORT=465;
-	public static final String EMAIL_ATTACHMENT_DESCRIPTON="XXXX Certificate";
-	public static final String EMAIL_ATTACHMENT_NAME="XXXX_Certificate";
+	public static final String EMAIL_ATTACHMENT_DESCRIPTION="XXXX XX Sertifika";
+	public static final String EMAIL_ATTACHMENT_NAME="XXXXXX_Sertifika";
 	public static final String EMAIL_FROM="IEEE YTU XXXX";
-	public static final String EMAIL_SUBJECT="XXXX Katılım Sertifikası";
-	public static final String EMAIL_BODY="XXXX Sertifikanız ektedir.";
+	public static final String EMAIL_SUBJECT="XXXX XX Katılım Sertifikası";
+	public static final String EMAIL_BODY="XXXX XX Sertifikanız ektedir.";
 
 }
