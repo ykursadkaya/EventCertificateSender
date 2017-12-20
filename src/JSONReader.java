@@ -63,6 +63,9 @@ public class JSONReader
 
 	public String upperCaseFirst(String name)
 	{
+		if (name.equals(""))
+			return name;
+
 		String[] split = name.split("\\s+");
 
 		for (int i = 0; i < split.length ; i++)
