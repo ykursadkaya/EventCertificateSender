@@ -66,7 +66,7 @@ public class JSONReader
 		if (name.equals(""))
 			return name;
 
-		String[] split = name.split("\\s+");
+		String[] split = name.split("\\.|\\s+");
 
 		for (int i = 0; i < split.length ; i++)
 		{
