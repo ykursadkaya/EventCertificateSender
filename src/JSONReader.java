@@ -39,7 +39,7 @@ public class JSONReader
 			{
 				JSONObject jsonObj = (JSONObject) it;
 
-				String name = (String) jsonObj.get(Constants.NAME_FIELD);
+				String name = upperCaseFirst((String) jsonObj.get(Constants.NAME_FIELD));
 				String email = (String) jsonObj.get(Constants.EMAIL_FIELD);
 				long counter = Long.valueOf((String) jsonObj.get(Constants.COUNTER_FIELD)).longValue();
 
@@ -59,5 +59,17 @@ public class JSONReader
 		}
 
 		return personList;
+	}
+
+	public String upperCaseFirst(String name)
+	{
+		String[] split = name.split("\\s+");
+
+		for (int i = 0; i < split.length ; i++)
+		{
+			split[i] = split[i].substring(0, 1).toUpperCase() + split[i].toLowerCase().substring(1);
+		}
+
+		return String.join(" ", split);
 	}
 }
