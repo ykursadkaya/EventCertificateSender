@@ -41,7 +41,7 @@ public class Main
 
 		for (Person person : reader.readJSON())
 		{
-			if ((person.getCounter() > Constants.SESSION_LIMIT) && (!person.getEmail().equals("") && !person.getName().equals("")))
+			if ((person.getCounter() >= Constants.SESSION_LIMIT) && (!person.getEmail().equals("") && !person.getName().equals("")))
 			{
 				filePath = sender.sendMail(person, creator.createCertificate(person).getPath());
 				writeLog(person.getName() + " | " + person.getEmail() + " | " + person.getCounter());
